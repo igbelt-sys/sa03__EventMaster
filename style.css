@@ -85,6 +85,43 @@ button {
     cursor: pointer;
 }
 
+#toggleDarkMode {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #007bff;
+}
+
+.switch-icone {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.switch-bolinha {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.dark-mode #toggleDarkMode .switch-bolinha {
+    left: 44px;
+}
+
+.dark-mode #toggleDarkMode {
+    background-color: #f0b429;
+}
+
 #mensagemErro {
     margin-top: 10px;
     min-height: 20px;

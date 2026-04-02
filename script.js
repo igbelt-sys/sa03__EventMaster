@@ -119,12 +119,12 @@ document.addEventListener("keydown", function (evento) {
 //mudar entre calro e escuro
 document.getElementById("toggleDarkMode").addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
-
-    // troca o texto do botao para mostrar o modo que pode ser ativado 
+    
+    // atualiza o estado do botao 
     if (document.body.classList.contains("dark-mode")) {
-        document.getElementById("toggleDarkMode").textContent = "Alternar modo claro";
+        document.getElementById("toggleDarkMode").setAttribute("true");
     } else {
-        document.getElementById("toggleDarkMode").textContent = "Alternar modo escuro";
+        document.getElementById("toggleDarkMode").setAttribute("false");
     }
 });
 
