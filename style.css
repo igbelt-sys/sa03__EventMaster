@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif; /* poppins só pq eu gosto KKKKKKKK popppins > comic sans */
+    font-family: "Poppins", sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -17,6 +17,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.titulo-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-app h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.titulo-app p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #666;
 }
 
 main {
@@ -124,9 +144,18 @@ button {
     border-color: #666;
 }
 
+.dark-mode .titulo-app h1 {
+    color: #66b2ff;
+}
+
+.dark-mode .titulo-app p {
+    color: #ddd;
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 }
